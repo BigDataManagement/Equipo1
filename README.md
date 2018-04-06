@@ -85,9 +85,11 @@ PD: Se adjunta un README del dataset de NETFLIX, importante tener en cuenta que 
 
 # Proceso de Solución
 ### Opciones
+1. Insertar en base de datos por medio del conector de Python, identificando el id de la pelicula al que se asocian las respectivas calificaciones, esta solucion no es tan optima por dos razones, primero porque debido a la estructura de datos que utiliza la base de datos la instruccion `insert` de alto nivel es relativamente lenta a la hora de ajecutarla mas de 24 millones de veces. Y segundo, debido a la integracion entre la base de datos y el lenguaje de programacion Python, se tarda mas tiempo en transferencia de datos que en verdadero tiempo de `insert`.
 
+2. Lo primero que hicimos fue hacer un cleaning de la data con python obteniendo solo la cantidad de peliculas de las cuales se tenian registros de calificaciones para que solo estas fueran agregadas a la base de datos. Luego de hacer este parseo se subieron los archivos generados (csv) a la base de datos a traves del comando de mysql `INSERT DATA INFILE file`, con este procedimiento todos los registros se subieron en no mas de 10 minutos.
 
 ### Solución
-
+Después de algunas pruebas y comparando el performance de las posibles soluciones se optó por la segunda ya que consumía menos memoria en la ejecución y demoraba menos tiempo en la carga de datos.
 
 ### Problemas
