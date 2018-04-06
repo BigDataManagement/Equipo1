@@ -10,20 +10,9 @@ MongoDB: https://www.mongodb.com/
 Estado actual de la data.
 
 Los datos estan almacenados en el sitio web kaggle: https://www.kaggle.com/
-
 Los datos se extraen desde: https://www.kaggle.com/netflix-inc/netflix-prize-data/data
 
-Dinámica de Trabajo.
-
-Se conformaran 4 equipos. Dos trabajarán con el sistema de gestión de bases de datos relacional MySQl, y los otros dos trabajarán con el sistema de gestión de bases
-de datos NoSQL MongoDB.
-<br>Equipo 1 (Sebastian Ortiz): MySQL
-<br>Equipo 2 (David Benitez): MongoDB
-<br>Equipo 3 (David Loaiza): MySQL
-<br>Equipo 4 (Miguel Ortiz): MongoDB
-
-
-ETAPA 1: DBMSs MySQL y MongoDB
+### ETAPA 1: DBMSs MySQL y MongoDB
 
 Paso a Paso
 
@@ -58,7 +47,6 @@ Esta colección tendrá los siguientes formato en cada uno de sus documentos:
 
 NOTA: Recordar que en mongodb no tenemos el problema de clave primaria, es decir, muchos de los documentos podrian tener el mismo id.
 
-
 Despues de tener los datos almacenados en los gestores de bases de datos se procederá a usar la plataforma Pentaho Data Integration para 
 unificar todas las fuentes de datos en un solo lugar, en esta parte se creará un workflow que nos permita unir los datos y presentarselos al usuario final.
 
@@ -66,9 +54,7 @@ Para esta etapa se debera trabajar de forma colaborativa, es decir, un equipo qu
 Nuevo Equipo 1: Nace de la unión del equipo 1 y 2
 Nuevo Equipo 2: Nace de la unión del equipo 3 y 4
 
-
-
-ETAPA 2: Pentaho Data Integration
+### ETAPA 2: Pentaho Data Integration
 
 Paso a Paso
 
@@ -93,17 +79,15 @@ Notar que se tienen varias filas por una misma pelicula, ya que hay mas de una c
 2. Se desea conocer las 5 peliculas mejor calificadas:
 id_pelicula, nombre_pelicula, año_lanzamiento, cantidad de usuarios que la calificaron, promedio de calificacion.
 
-NOTA: tener en cuenta que el exito de las consultas reside en que se pueda consultar una información completa y coherente, es decir, una posible consulta
-sobre una tabla "movie_titles" unificada en pentaho debe permitir visualizar la información de las peliculas que provienen tanto del gestor MySQL y de MongoDB.
-
-
-Se adjuntan algunos enlaces que pueden ser de interes:
-
-https://www.youtube.com/watch?v=oYidt2kBw6Q
-https://www.youtube.com/watch?v=a6nMj6M7IUU
-https://wiki.pentaho.com/display/BAD/Read+Data+From+MongoDB
-https://wiki.pentaho.com/display/BAD/Write+Data+To+MongoDB
+NOTA: tener en cuenta que el exito de las consultas reside en que se pueda consultar una información completa y coherente, es decir, una posible consulta sobre una tabla "movie_titles" unificada en pentaho debe permitir visualizar la información de las peliculas que provienen tanto del gestor MySQL y de MongoDB.
 
 PD: Se adjunta un README del dataset de NETFLIX, importante tener en cuenta que no hacemos uso de todos los archivos del dataset.
 
-Fecha de Sustentación del proyecto: Viernes 6 de Abril del 2018
+# Proceso de Solución
+### Opciones
+
+
+### Solución
+
+
+### Problemas
